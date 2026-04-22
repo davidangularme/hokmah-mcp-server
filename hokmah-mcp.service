@@ -1,0 +1,18 @@
+[Unit]
+Description=Hokmah MCP Server
+After=network.target vpm-api.service
+Requires=vpm-api.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/vpm/mcp-server
+Environment=HOKMAH_API_BASE=http://localhost:8000
+Environment=HOKMAH_MCP_PORT=8001
+Environment=HOKMAH_PRO_KEYS=/home/vpm/mcp-server/pro_keys.json
+ExecStart=/usr/bin/python3 /home/vpm/mcp-server/mcp_server.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

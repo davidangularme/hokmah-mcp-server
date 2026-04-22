@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.davidangularme/hokmah",
+  "title": "Hokmah",
+  "description": "AI Agent with Architectural Memory. Gives any AI coding agent persistent codebase understanding via TransitionGraph, IdeaGraph, and WorldModel. Analyze impact (FREE), generate tests and code (PRO, 40x fewer tokens).",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/davidangularme/hokmah-mcp-server",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hokmah.dev/mcp"
+    }
+  ]
+}
